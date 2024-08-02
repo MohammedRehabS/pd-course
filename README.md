@@ -78,11 +78,12 @@ The goal of Day 2 is to perform floorplanning and placement.
 
 ## Theory
 Formulae:
+1. h
 
 $$ \texttt{utilization ratio} = {\texttt{Total area of the netlist} \over \texttt{Total area of the core}} $$
 
-$$ \texttt{aspect ratio} \= {\texttt{core height} \over \texttt{core width}} $$
+$$ \texttt{aspect ratio} = {\texttt{core height} \over \texttt{core width}} $$
 
-
+Above equations
 
 </details>
