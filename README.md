@@ -70,20 +70,32 @@ $$ \texttt{flop ratio} = {1613 \over 14876} = 0.1084 $$
 $$ \texttt{percentage of flops} = 10.84 $$
 </details>
 
-<details>
-<summary> Day 2 </summary>
+# Day 2
 
 ## Summary
 The goal of Day 2 is to perform floorplanning and placement.
 
 ## Theory
-Formulae:
-1. h
+
+### Floor Planning considerations:
+
+Core vs Die:
+![image](https://github.com/user-attachments/assets/cf74b383-5f76-4617-9790-dbaf223c216c)
+
+Core is the inner region and die is the total region. Pad are placed in the middle.
 
 $$ \texttt{utilization ratio} = {\texttt{Total area of the netlist} \over \texttt{Total area of the core}} $$
 
 $$ \texttt{aspect ratio} = {\texttt{core height} \over \texttt{core width}} $$
 
-Above equations
+Utilization ratio is generally kept between 0.5-0.6 in order to allow room for optimizations, decaps, routing. All these parameters can be controlled using keywords.
 
-</details>
+Floorplanning is performed before placement in order to place blocks (pre placed cells). This fixes the positions and blockages are created for the placer in this region. Blocks are created by cutting the logic and deciding pins. These are assigned to block owners for implementation with guidance on area and dimensions. Blocks are cells which are generally repeated multiple times throughout the design or some complicated logic.
+
+The blocks placement is an optimization problem where the parameters are closeness to respective ports, order in which the blocks operate, etc. Flylines are used in this stage to determine their placement.
+
+Decoupling capacitors provide a local source of charge for instances rather than from the power supply. These charge when there is no switching happening and provide charge when the instances switch. These help alleviate dynamic voltage drops to some extent. Decaps are generally placed all around the blocks.
+
+Having just one pathway for power delivery causes IR drop irrespective of presence of decaps as decaps can charge upto Vsource - IR. Creating a grid structure is important as it ensures multiple path ways for various different instances.
+
+The area between the core and die is blocked using logical cell placement blockage so that the placer does not place any cells here. Pins are placed here, pins can be equidistant or at random distance, Also the pin placement should take into consideration the block inputs. Clock pins are larger than signal as they have huge fanout and need less resistance.
