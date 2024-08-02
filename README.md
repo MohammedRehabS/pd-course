@@ -1,4 +1,5 @@
-# Overview
+<details>
+<summary> Overview </summary>
 Term  | Description
 | :---: | :---
 Skywater 130nm | Skywater 130nm is a open source PDK (Process Design Kit) released in collaboration between Google and Skywater. It has Apache 2.0 licensing.
@@ -8,8 +9,10 @@ OpenLane  | OpenLane is an automated RTL to GDSII flow based on several componen
 ![image](https://github.com/user-attachments/assets/72d3394c-116d-4976-a4bc-8feed420e8b3)
 
 The goal of this course is to use OpenLane to go through RTL2GDS flow for a design called ***picorv32a*** on ***skywater_130A_sky130_fd_sc_hd*** technology.
+<\details>
 
-# Day 1
+<details>
+<summary> Day 1 </summary>
 ## Summary
 The goal of Day 1 is to synthesize the design and figure out the flop ratio.
 
@@ -62,3 +65,4 @@ Log file:
 $$ \texttt{flop ratio} = {1613 \over 14876} = 0.1084 $$
 
 $$ \texttt{percentage of flops} = 10.84 $$
+<\details>
