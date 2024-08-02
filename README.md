@@ -55,6 +55,7 @@ Output gate level netlist:
 ![image](https://github.com/user-attachments/assets/81782707-e206-4f4f-b331-54f445c3c9fc)
 
 Checking the flop ratio:
+
 flop ratio is given by:
 
 $$ \texttt{flop ratio} = {\texttt{num of flops} \over  \texttt{total number of cells}} $$
