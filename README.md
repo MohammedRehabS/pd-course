@@ -40,3 +40,25 @@ logs | For each step in the flow contains the log files
 reports | For each step in the flow contains the report files
 tmp | Contains all the merged/trimmed PDK files after importing
 
+## Running Synthesis to figure out flop ratio
+run_synthesis command used for performing synthesis to output a gate level netlist
+End of synthesis command:
+![image](https://github.com/user-attachments/assets/1070d0a4-20aa-4836-8473-edad962145ca)
+
+Output gate level netlist:
+![image](https://github.com/user-attachments/assets/fe29091f-84c5-41a9-a327-d108bfa5eccb)
+![image](https://github.com/user-attachments/assets/81782707-e206-4f4f-b331-54f445c3c9fc)
+
+Checking the flop ratio:
+flop ratio is given by:
+
+$$ \texttt{flop ratio} = {\texttt{num of flops} \over  \texttt{total number of cells}} $$
+
+Log file:
+
+![image](https://github.com/user-attachments/assets/b8d7ab5f-12e1-4dff-ae5c-9a7968269338)
+
+
+$$ \texttt{flop ratio} = {1613 \over 14876} = 0.1084 $$
+
+$$ \texttt{percentage of flops} = 10.84 $$
