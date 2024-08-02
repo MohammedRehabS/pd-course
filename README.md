@@ -1,6 +1,6 @@
 
-<details>
-<summary> Overview </summary>
+
+# Overview
 
 Term  | Description
 | :---: | :---
@@ -11,7 +11,6 @@ OpenLane  | OpenLane is an automated RTL to GDSII flow based on several componen
 ![image](https://github.com/user-attachments/assets/72d3394c-116d-4976-a4bc-8feed420e8b3)
 
 The goal of this course is to use OpenLane to go through RTL2GDS flow for a design called ***picorv32a*** on ***skywater_130A_sky130_fd_sc_hd*** technology.
-<\details>
 
 <details>
 <summary> Day 1 </summary>
@@ -68,4 +67,3 @@ Log file:
 $$ \texttt{flop ratio} = {1613 \over 14876} = 0.1084 $$
 
 $$ \texttt{percentage of flops} = 10.84 $$
-<\details>
