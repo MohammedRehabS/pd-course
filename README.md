@@ -1,5 +1,5 @@
-<details>
-<summary> Overview </summary>
+
+# Overview
 Term  | Description
 | :---: | :---
 Skywater 130nm | Skywater 130nm is a open source PDK (Process Design Kit) released in collaboration between Google and Skywater. It has Apache 2.0 licensing.
@@ -13,6 +13,7 @@ The goal of this course is to use OpenLane to go through RTL2GDS flow for a desi
 
 <details>
 <summary> Day 1 </summary>
+
 ## Summary
 The goal of Day 1 is to synthesize the design and figure out the flop ratio.
 
