@@ -68,3 +68,21 @@ Log file:
 $$ \texttt{flop ratio} = {1613 \over 14876} = 0.1084 $$
 
 $$ \texttt{percentage of flops} = 10.84 $$
+</details>
+
+<details>
+<summary> Day 2 </summary>
+
+## Summary
+The goal of Day 2 is to perform floorplanning and placement.
+
+## Theory
+Formulae:
+
+$$ \texttt{utilization ratio} = {\texttt{Total area of the netlist} \over \texttt{Total area of the core}} $$
+
+$$ \texttt{aspect ratio} \= {\texttt{core height} \over \texttt{core width}} $$
+
+
+
+</details>
