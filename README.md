@@ -188,7 +188,7 @@ $$ \texttt{ Die Area} = \texttt{length} * \texttt{height} = {(660685-0) \over 10
 Core area: 
 ![image](https://github.com/user-attachments/assets/eab46e48-5abc-4416-b54c-b9a58a8ca656)
 
-$$ \texttt{ Core Area} = \texttt{length} * \texttt{height} = (655.04 - 5.52) * (658.24-10.88) = 420473.26 \texttt{sq microns} $$
+$$ \texttt{ Core Area} = \texttt{width} * \texttt{height} = (655.04 - 5.52) * (658.24-10.88) = 420473.26 \texttt{sq microns} $$
 
 chip area reported during synthesis:
 
