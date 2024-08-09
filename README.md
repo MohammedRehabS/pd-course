@@ -7,7 +7,7 @@
  </div>
  <div class="toc">
   <ul>
-    <li><a href="#header-1">Day 1 Floorplanning and flop ratio calculation</a></li>
+    <li><a href="#header-1">Day 1 Synthesis and flop ratio calculation</a></li>
 	<ul>
         <li><a href="#header-1-1"> Summary</a></li>
   </ul>
@@ -18,7 +18,37 @@
 			<li><a href="#header-1-3">Running Synthesis to figure out flop ratio</a></li>
 		</ul>
  </div>
-        
+ <div class="toc">
+  <ul>
+    <li><a href="#header-2">Day 2 </a></li>
+	<ul>
+        	<li><a href="#header-2-1"> Summary</a></li>
+	</ul>
+	<ul>
+		<li><a href="#header-2-2">Theory</a></li>
+		<ul>
+			<li><a href="#header-2-2-1">Floor Planning considerations</a></li>
+		</ul>
+	</ul>
+	<ul>
+		<li><a href="#header-2-3">Floorplanning lab</a></li>
+		<ul>
+			<li><a href="#header-2-3-1">Running Floorplanning</a></li>
+		<ul>
+			<li><a href="#header-2-3-2">Reviewing results</a></li>
+			<u1>
+				<li><a href="#header-2-3-2-1">Manually checking the def</a></li>
+			</u1>
+			<u1>
+				<li><a href="#header-2-3-2-2">Calculating Core and Die area and utilization ratio</a></li>
+			</u1>
+			<u1>
+				<li><a href="#header-2-3-2-3">Reviewing the def using Magic</a></li>
+			</u1>
+		</ul>
+	</ul>
+ </div>
+
 # <h0 id="header-0">Overview</h0>
 
 Term  | Description
@@ -88,14 +118,14 @@ $$ \texttt{flop ratio} = {1613 \over 14876} = 0.1084 $$
 $$ \texttt{percentage of flops} = 10.84 $$
 
 
-# Day 2
+# <h2 id="header-2">Day 2</h2>
 
-## Summary
+## <h2 id="header-2-1">Summary</h2>
 The goal of Day 2 is to perform floorplanning and placement.
 
-## Theory
+## <h2 id="header-2-2">Theory</h2>
 
-### Floor Planning considerations:
+### <h2 id="header-2-2-1">Floor Planning considerations:</h2>
 
 Core vs Die:
 
@@ -119,9 +149,9 @@ Having just one pathway for power delivery causes IR drop irrespective of presen
 
 The area between the core and die is blocked using logical cell placement blockage so that the placer does not place any cells here. Pins are placed here, pins can be equidistant or at random distance, Also the pin placement should take into consideration the block inputs. Clock pins are larger than signal as they have huge fanout and need less resistance.
 
-## Floorplanning lab
+## <h2 id="header-2-3">Floorplanning lab</h2>
 
-### Running Floorplanning
+### <h2 id="header-2-3-1">Running Floorplanning</h2>
 
 ***run_floorplan*** command is used to run floor planning. All the system default commands are present in the following folder:
 
@@ -135,9 +165,9 @@ Running floorplanning:
 
 ![image](https://github.com/user-attachments/assets/e791d1ae-545b-4e1a-ae4c-af93eec42a49)
 
-### Reviewing results
+### <h2 id="header-2-3-2">Reviewing results</h2>
 
-#### Manually checking the def
+#### <h2 id="header-2-3-2-1">Manually checking the def</h2>
 
 Output is a def file:
 
@@ -151,7 +181,7 @@ All logic instances don't have placement defined. Tap cells and decaps are place
 
 Nets have logical connectivity defined but no routing as expected
 
-#### Calculating Core and Die area and utilization ratio
+#### <h2 id="header-2-3-2-2">Calculating Core and Die area and utilization ratio</h2>
 
 $$ \texttt{ Die Area} = \texttt{length} * \texttt{height} = {(660685-0) \over 1000} * {(671405-0) \over 1000} = 443587.21 \texttt{sq microns} $$
 
@@ -170,7 +200,7 @@ core utilization ratio reported:
 
 $$ \texttt{Calculated core utilization ratio from observation} = {147712.92 \over 420473.26} = 35.13\texttt{%} $$
 
-#### Reviewing the def using Magic
+#### <h2 id="header-2-3-2-3">Reviewing the def using Magic</h2>
 
 Following command is run to open Magic to review def file:
 
@@ -179,9 +209,21 @@ Following command is run to open Magic to review def file:
 Keys used in magic:
 Key  | Description
 | :---: | :---
-S | Selects entire design
+S | Selects instance or object
 V | centers the design
 Z | Zooms in
 arrows | Move around in the design
 left click and the right click other location | Creates a box for reference while zooming in
+'what' in tkcon | query attributes of object selected
+
+Layout window:
+
+![image](https://github.com/user-attachments/assets/b9a25eb1-5782-4c9c-88f5-c7527cf78636)
+
+As seen all the instances in lower left. Tap cells diagonally equidistant and all pins random but equidistant as FP_IO_MODE is set to 1.
+
+Querying attributes of a decap:
+
+![image](https://github.com/user-attachments/assets/5eafa019-a144-4744-9b2c-20ae4df02da3)
+
 
