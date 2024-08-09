@@ -119,9 +119,7 @@ Having just one pathway for power delivery causes IR drop irrespective of presen
 
 The area between the core and die is blocked using logical cell placement blockage so that the placer does not place any cells here. Pins are placed here, pins can be equidistant or at random distance, Also the pin placement should take into consideration the block inputs. Clock pins are larger than signal as they have huge fanout and need less resistance.
 
-## Paths and 
-
-## lab
+## Floorplanning lab
 
 ***run_floorplan*** command is used to run floor planning. All the system default commands are present in the following folder:
 
