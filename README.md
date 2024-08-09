@@ -98,6 +98,7 @@ The goal of Day 2 is to perform floorplanning and placement.
 ### Floor Planning considerations:
 
 Core vs Die:
+
 ![image](https://github.com/user-attachments/assets/cf74b383-5f76-4617-9790-dbaf223c216c)
 
 Core is the inner region and die is the total region. Pad are placed in the middle.
