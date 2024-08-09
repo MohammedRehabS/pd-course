@@ -27,7 +27,10 @@
 	<ul>
 		<li><a href="#header-2-2">Theory</a></li>
 		<ul>
-			<li><a href="#header-2-2-1">Floor Planning considerations</a></li>
+			<li><a href="#header-2-2-1">Floor Planning</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-2-2-2">Placement</a></li>
 		</ul>
 	</ul>
 	<ul>
@@ -125,7 +128,7 @@ The goal of Day 2 is to perform floorplanning and placement.
 
 ## <h2 id="header-2-2">Theory</h2>
 
-### <h2 id="header-2-2-1">Floor Planning considerations:</h2>
+### <h2 id="header-2-2-1">Floor Planning:</h2>
 
 Core vs Die:
 
@@ -148,6 +151,21 @@ Decoupling capacitors provide a local source of charge for instances rather than
 Having just one pathway for power delivery causes IR drop irrespective of presence of decaps as decaps can charge upto Vsource - IR. Creating a grid structure is important as it ensures multiple path ways for various different instances.
 
 The area between the core and die is blocked using logical cell placement blockage so that the placer does not place any cells here. Pins are placed here, pins can be equidistant or at random distance, Also the pin placement should take into consideration the block inputs. Clock pins are larger than signal as they have huge fanout and need less resistance.
+
+### <h2 id="header-2-2-2">Placement:</h2>
+
+Placement is done post placement of blocks and IO pins. 
+
+The idea is to take the library information of the cells to implement the netlist on the design and come up with an optimal placement which could possibly pass timing.
+
+![image](https://github.com/user-attachments/assets/24951443-c606-4e5b-b05e-e47e022d3ada)
+
+As seen below first the instances are placed according to the netlist on the design instances close to the pins are placed near the IO pads. 
+
+If there are hard paths then placement is performed and then based on wireload estimations cap is calculated and  if slew threshold is not met buffers are added to regenerate the signals and help with signal integrity.
+
+![image](https://github.com/user-attachments/assets/656327cd-f74e-41fd-9038-da219b94c956)
+
 
 ## <h2 id="header-2-3">Floorplanning lab</h2>
 
