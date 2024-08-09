@@ -19,7 +19,7 @@
 		</ul>
  </div>
         
-# <h0 id="header-0">Overview
+# <h0 id="header-0">Overview</h0>
 
 Term  | Description
 | :---: | :---
@@ -31,12 +31,12 @@ OpenLane  | OpenLane is an automated RTL to GDSII flow based on several componen
 
 The goal of this course is to use OpenLane to go through RTL2GDS flow for a design called ***picorv32a*** on ***skywater_130A_sky130_fd_sc_hd*** technology.
 
-# <h1 id="header-1">Day 1
+# <h1 id="header-1">Day 1</h1>
 
-## <h1 id="header-1-1">Summary
+## <h1 id="header-1-1">Summary</h1>
 The goal of Day 1 is to synthesize the design and figure out the flop ratio.
 
-## <h1 id="header-1-2">Paths and setup
+## <h1 id="header-1-2">Paths and setup</h1>
 The PDK files used for this project are here:
 ![image](https://github.com/user-attachments/assets/7e116f27-a0bd-4868-ac2d-c66e1c6e39a4)
 
@@ -63,7 +63,7 @@ logs | For each step in the flow contains the log files
 reports | For each step in the flow contains the report files
 tmp | Contains all the merged/trimmed PDK files after importing
 
-## <h1 id="header-1-3">Running Synthesis to figure out flop ratio
+## <h1 id="header-1-3">Running Synthesis to figure out flop ratio</h1>
 run_synthesis command used for performing synthesis to output a gate level netlist
 End of synthesis command:
 ![image](https://github.com/user-attachments/assets/1070d0a4-20aa-4836-8473-edad962145ca)
