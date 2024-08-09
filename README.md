@@ -121,6 +121,8 @@ The area between the core and die is blocked using logical cell placement blocka
 
 ## Floorplanning lab
 
+### Running Floorplanning
+
 ***run_floorplan*** command is used to run floor planning. All the system default commands are present in the following folder:
 
 ![image](https://github.com/user-attachments/assets/69bae8fc-43ed-48f3-bf36-87ce57f42c7a)
@@ -133,9 +135,23 @@ Running floorplanning:
 
 ![image](https://github.com/user-attachments/assets/e791d1ae-545b-4e1a-ae4c-af93eec42a49)
 
+### Reviewing results
+
+#### Manually checking the def
+
 Output is a def file:
 
 ![image](https://github.com/user-attachments/assets/097762b3-485c-4f0f-960a-7a1a4a16b1a5)
+
+409 pins present with location defined
+
+21230 components ( synthesis had 14876, difference could be because of tap cells and decaps)
+
+All logic instances don't have placement defined. Tap cells and decaps are placed.
+
+Nets have logical connectivity defined but no routing as expected
+
+#### Calculating Core and Die area and utilization ratio
 
 $$ \texttt{ Die Area} = \texttt{length} * \texttt{height} = {(660685-0) \over 1000} * {(671405-0) \over 1000} = 443587.21 \texttt{sq microns} $$
 
@@ -153,4 +169,10 @@ core utilization ratio reported:
 ![image](https://github.com/user-attachments/assets/cd05068d-ab6e-4ef9-a4bd-85e85703d882)
 
 $$ \texttt{Calculated core utilization ratio from observation} = {147712.92 \over 420473.26} = 35.13\texttt{%} $$
+
+#### Reviewing the def using Magic
+
+Following command is run to open Magic to review def file.
+
+
 
