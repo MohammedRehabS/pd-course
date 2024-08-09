@@ -145,7 +145,7 @@ Output is a def file:
 
 409 pins present with location defined
 
-21230 components ( synthesis had 14876, difference could be because of tap cells and decaps)
+21230 components ( synthesis had 14876, difference is because of tap cells and decaps which are 6354 in number)
 
 All logic instances don't have placement defined. Tap cells and decaps are placed.
 
@@ -172,7 +172,16 @@ $$ \texttt{Calculated core utilization ratio from observation} = {147712.92 \ove
 
 #### Reviewing the def using Magic
 
-Following command is run to open Magic to review def file.
+Following command is run to open Magic to review def file:
 
+![image](https://github.com/user-attachments/assets/4a16974a-77cf-4de9-9b72-e74a510ff381)
 
+Keys used in magic:
+Key  | Description
+| :---: | :---
+S | Selects entire design
+V | centers the design
+Z | Zooms in
+arrows | Move around in the design
+left click and the right click other location | Creates a box for reference while zooming in
 
