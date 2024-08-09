@@ -118,3 +118,41 @@ Decoupling capacitors provide a local source of charge for instances rather than
 Having just one pathway for power delivery causes IR drop irrespective of presence of decaps as decaps can charge upto Vsource - IR. Creating a grid structure is important as it ensures multiple path ways for various different instances.
 
 The area between the core and die is blocked using logical cell placement blockage so that the placer does not place any cells here. Pins are placed here, pins can be equidistant or at random distance, Also the pin placement should take into consideration the block inputs. Clock pins are larger than signal as they have huge fanout and need less resistance.
+
+## Paths and 
+
+## lab
+
+***run_floorplan*** command is used to run floor planning. All the system default commands are present in the following folder:
+
+![image](https://github.com/user-attachments/assets/69bae8fc-43ed-48f3-bf36-87ce57f42c7a)
+
+README.md file contains information about all keywords for all different steps as shown below for floorplanning.
+
+![image](https://github.com/user-attachments/assets/670b53da-1489-494b-9636-299e9aa72cca)
+
+Running floorplanning:
+
+![image](https://github.com/user-attachments/assets/e791d1ae-545b-4e1a-ae4c-af93eec42a49)
+
+Output is a def file:
+
+![image](https://github.com/user-attachments/assets/097762b3-485c-4f0f-960a-7a1a4a16b1a5)
+
+$$ \texttt{ Die Area} = \texttt{length} * \texttt{height} = {(660685-0) \over 1000} * {(671405-0) \over 1000} = 443587.21 \texttt{sq microns} $$
+
+Core area: 
+![image](https://github.com/user-attachments/assets/eab46e48-5abc-4416-b54c-b9a58a8ca656)
+
+$$ \texttt{ Core Area} = \texttt{length} * \texttt{height} = (655.04 - 5.52) * (658.24-10.88) = 420473.26 \texttt{sq microns} $$
+
+chip area reported during synthesis:
+
+![image](https://github.com/user-attachments/assets/ed0d76b8-cb36-4df2-8eb1-cc969aa1fd28)
+
+core utilization ratio reported:
+
+![image](https://github.com/user-attachments/assets/cd05068d-ab6e-4ef9-a4bd-85e85703d882)
+
+$$ \texttt{Calculated core utilization ratio from observation} = {147712.92 \over 420473.26} = 35.13\texttt{%} $$
+
