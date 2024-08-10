@@ -152,6 +152,8 @@ Having just one pathway for power delivery causes IR drop irrespective of presen
 
 The area between the core and die is blocked using logical cell placement blockage so that the placer does not place any cells here. Pins are placed here, pins can be equidistant or at random distance, Also the pin placement should take into consideration the block inputs. Clock pins are larger than signal as they have huge fanout and need less resistance.
 
+PDN is generally implemented during floorplanning but here it will happen after CTS.
+
 ### <h2 id="header-2-2-2">Placement:</h2>
 
 Placement is done post placement of blocks and IO pins. 
@@ -166,7 +168,7 @@ If there are hard paths then placement is performed and then based on wireload e
 
 ![image](https://github.com/user-attachments/assets/656327cd-f74e-41fd-9038-da219b94c956)
 
-After this is done then congestion aware timing analysis considering ideal clocks.
+After this is done then congestion aware analysis considering ideal clocks.
 
 Generally placement is done in two stages
 1. Global placement : Coarse placement and no legalizations considered
@@ -249,4 +251,20 @@ Querying attributes of a decap:
 
 ![image](https://github.com/user-attachments/assets/5eafa019-a144-4744-9b2c-20ae4df02da3)
 
+## <h2 id="header-2-4">Placement lab</h2>
 
+### <h2 id="header-2-4-1">Running placement</h2>
+
+To run placement below command is run:
+![image](https://github.com/user-attachments/assets/461bb7df-b0bc-423b-9317-25fb0b0a54ac)
+
+placement optimizes a parameter called ***HPWL (Half parameter wirelength)*** and waits for overflow to converge
+
+Both detailed and global placement is performed. Congestion aware placement is done.
+
+### <h2 id="header-2-4-2">Reviewing results</h2>
+
+Placed def is viewed in magic:
+![image](https://github.com/user-attachments/assets/9ad1ca7f-3ece-4301-b702-5a9bc497706e)
+
+![image](https://github.com/user-attachments/assets/ebbcc4e6-3bf3-4b28-89a0-5d9a34b7f273)
