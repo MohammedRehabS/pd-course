@@ -289,6 +289,7 @@ Querying attributes of a decap:
 ### <h1 id="header-2-4-1">Running placement</h1>
 
 To run placement below command is run:
+
 ![image](https://github.com/user-attachments/assets/461bb7df-b0bc-423b-9317-25fb0b0a54ac)
 
 placement optimizes a parameter called ***HPWL (Half parameter wirelength)*** and waits for overflow to converge
