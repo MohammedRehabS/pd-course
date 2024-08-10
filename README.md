@@ -1,16 +1,16 @@
 # Contents
  
- <div class="toc">
-  <ul>
-    <li><a href="#header-0"> Overview</a></li>
-	</ul>
- </div>
- <div class="toc">
-  <ul>
-    <li><a href="#header-1">Day 1 Synthesis and flop ratio calculation</a></li>
+<div class="toc">
 	<ul>
-        <li><a href="#header-1-1"> Summary</a></li>
-  </ul>
+    		<li><a href="#header-0"> Overview</a></li>
+	</ul>
+</div>
+<div class="toc">
+	<ul>
+    		<li><a href="#header-1">Day 1 Synthesis and flop ratio calculation</a></li>
+		<ul>
+        		<li><a href="#header-1-1"> Summary</a></li>
+ 		</ul>
 		<ul>
 			<li><a href="#header-1-2">Paths and setup</a></li>
 		</ul>
@@ -19,27 +19,27 @@
 		</ul>
  </div>
  <div class="toc">
-  <ul>
-    <li><a href="#header-2">Day 2 </a></li>
-	<ul>
-        	<li><a href="#header-2-1"> Summary</a></li>
-	</ul>
-	<ul>
-		<li><a href="#header-2-2">Theory</a></li>
+  	<ul>
+    		<li><a href="#header-2">Day 2 </a></li>
 		<ul>
-			<li><a href="#header-2-2-1">Floor Planning</a></li>
+        		<li><a href="#header-2-1"> Summary</a></li>
 		</ul>
 		<ul>
-			<li><a href="#header-2-2-2">Placement</a></li>
+			<li><a href="#header-2-2">Theory</a></li>
+			<ul>
+				<li><a href="#header-2-2-1">Floor Planning</a></li>
+			</ul>
+			<ul>
+				<li><a href="#header-2-2-2">Placement</a></li>
+			</ul>
 		</ul>
-	</ul>
-	<ul>
-		<li><a href="#header-2-3">Floorplanning lab</a></li>
 		<ul>
-			<li><a href="#header-2-3-1">Running Floorplanning</a></li>
-		</ul>
-		<ul>
-			<li><a href="#header-2-3-2">Reviewing results</a></li>
+			<li><a href="#header-2-3">Floorplanning lab</a></li>
+			<ul>
+				<li><a href="#header-2-3-1">Running Floorplanning</a></li>
+			</ul>
+			<ul>
+				<li><a href="#header-2-3-2">Reviewing results</a></li>
 				<u1>
 					<li><a href="#header-2-3-2-1">Manually checking the def</a></li>
 				</u1>
@@ -49,9 +49,9 @@
 				<u1>
 					<li><a href="#header-2-3-2-3">Reviewing the def using Magic</a></li>
 				</u1>
+			</ul>
 		</ul>
 	</ul>
-</ul>
 </div>
 
 # <h1 id="header-0">Overview</h1>
