@@ -35,6 +35,9 @@
 			<ul>
 				<li><a href="#header-2-2-3">Cell Design and Characterization flows</a></li>
 			</ul>
+			<ul>
+				<li><a href="#header-2-2-4">Timing Characterization flows</a></li>
+			</ul>
 		</ul>
 		<ul>
 			<li><a href="#header-2-3">Floorplanning lab</a></li>
@@ -195,6 +198,14 @@ The stage is design is complete. Now the characterization is performed to obtain
 Charactization is of three types and performed in GUNA(spice simulator):
 
 ![image](https://github.com/user-attachments/assets/8dab416c-f6ad-4444-92e0-d37c0eb9b5bc)
+
+### <h1 id="header-2-2-4">Timing Characterization:</h1>
+
+For timing characterizations following definitions are important:
+
+![image](https://github.com/user-attachments/assets/ebfca498-3457-486d-9305-aa1347a9ab63)
+
+Propagation delays can be negative if input slew is too high or the thresholds defined are weird.
 
 ## <h1 id="header-2-3">Floorplanning lab</h1>
 
