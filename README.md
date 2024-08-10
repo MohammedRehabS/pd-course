@@ -40,15 +40,15 @@
 		</ul>
 		<ul>
 			<li><a href="#header-2-3-2">Reviewing results</a></li>
-			<u1>
-				<li><a href="#header-2-3-2-1">Manually checking the def</a></li>
-			</u1>
-			<u1>
-				<li><a href="#header-2-3-2-2">Calculating Core and Die area and utilization ratio</a></li>
-			</u1>
-			<u1>
-				<li><a href="#header-2-3-2-3">Reviewing the def using Magic</a></li>
-			</u1>
+				<u1>
+					<li><a href="#header-2-3-2-1">Manually checking the def</a></li>
+				</u1>
+				<u1>
+					<li><a href="#header-2-3-2-2">Calculating Core and Die area and utilization ratio</a></li>
+				</u1>
+				<u1>
+					<li><a href="#header-2-3-2-3">Reviewing the def using Magic</a></li>
+				</u1>
 		</ul>
 	</ul>
 </ul>
