@@ -36,7 +36,7 @@
 				<li><a href="#header-2-2-3">Cell Design and Characterization flows</a></li>
 			</ul>
 			<ul>
-				<li><a href="#header-2-2-4">Timing Characterization flows</a></li>
+				<li><a href="#header-2-2-4">Timing Characterization</a></li>
 			</ul>
 		</ul>
 		<ul>
