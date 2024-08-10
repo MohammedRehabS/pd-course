@@ -123,14 +123,14 @@ $$ \texttt{flop ratio} = {1613 \over 14876} = 0.1084 $$
 $$ \texttt{percentage of flops} = 10.84 $$
 
 
-# <h2 id="header-2">Day 2</h2>
+# <h1 id="header-2">Day 2</h1>
 
-## <h2 id="header-2-1">Summary</h2>
+## <h1 id="header-2-1">Summary</h1>
 The goal of Day 2 is to perform floorplanning and placement.
 
-## <h2 id="header-2-2">Theory</h2>
+## <h1 id="header-2-2">Theory</h1>
 
-### <h2 id="header-2-2-1">Floor Planning:</h2>
+### <h1 id="header-2-2-1">Floor Planning:</h1>
 
 Core vs Die:
 
@@ -156,7 +156,7 @@ The area between the core and die is blocked using logical cell placement blocka
 
 PDN is generally implemented during floorplanning but here it will happen after CTS.
 
-### <h2 id="header-2-2-2">Placement:</h2>
+### <h1 id="header-2-2-2">Placement:</h1>
 
 Placement is done post placement of blocks and IO pins. 
 
@@ -176,9 +176,9 @@ Generally placement is done in two stages
 1. Global placement : Coarse placement and no legalizations considered
 2. Detailed placement: legalizations happen here where instances are placed according to standard cell rows.
 
-## <h2 id="header-2-3">Floorplanning lab</h2>
+## <h1 id="header-2-3">Floorplanning lab</h1>
 
-### <h2 id="header-2-3-1">Running Floorplanning</h2>
+### <h1 id="header-2-3-1">Running Floorplanning</h1>
 
 ***run_floorplan*** command is used to run floor planning. All the system default commands are present in the following folder:
 
@@ -192,9 +192,9 @@ Running floorplanning:
 
 ![image](https://github.com/user-attachments/assets/e791d1ae-545b-4e1a-ae4c-af93eec42a49)
 
-### <h2 id="header-2-3-2">Reviewing results</h2>
+### <h1 id="header-2-3-2">Reviewing results</h1>
 
-#### <h2 id="header-2-3-2-1">Manually checking the def</h2>
+#### <h1 id="header-2-3-2-1">Manually checking the def</h1>
 
 Output is a def file:
 
@@ -208,7 +208,7 @@ All logic instances don't have placement defined. Tap cells and decaps are place
 
 Nets have logical connectivity defined but no routing as expected
 
-#### <h2 id="header-2-3-2-2">Calculating Core and Die area and utilization ratio</h2>
+#### <h1 id="header-2-3-2-2">Calculating Core and Die area and utilization ratio</h1>
 
 $$ \texttt{ Die Area} = \texttt{length} * \texttt{height} = {(660685-0) \over 1000} * {(671405-0) \over 1000} = 443587.21 \texttt{sq microns} $$
 
@@ -227,7 +227,7 @@ core utilization ratio reported:
 
 $$ \texttt{Calculated core utilization ratio from observation} = {147712.92 \over 420473.26} = 0.3513 $$
 
-#### <h2 id="header-2-3-2-3">Reviewing the def using Magic</h2>
+#### <h1 id="header-2-3-2-3">Reviewing the def using Magic</h1>
 
 Following command is run to open Magic to review def file:
 
@@ -253,9 +253,9 @@ Querying attributes of a decap:
 
 ![image](https://github.com/user-attachments/assets/5eafa019-a144-4744-9b2c-20ae4df02da3)
 
-## <h2 id="header-2-4">Placement lab</h2>
+## <h1 id="header-2-4">Placement lab</h1>
 
-### <h2 id="header-2-4-1">Running placement</h2>
+### <h1 id="header-2-4-1">Running placement</h1>
 
 To run placement below command is run:
 ![image](https://github.com/user-attachments/assets/461bb7df-b0bc-423b-9317-25fb0b0a54ac)
@@ -264,7 +264,7 @@ placement optimizes a parameter called ***HPWL (Half parameter wirelength)*** an
 
 Both detailed and global placement is performed. Congestion aware placement is done.
 
-### <h2 id="header-2-4-2">Reviewing results</h2>
+### <h1 id="header-2-4-2">Reviewing results</h1>
 
 Placed def is viewed in magic:
 ![image](https://github.com/user-attachments/assets/9ad1ca7f-3ece-4301-b702-5a9bc497706e)
