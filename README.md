@@ -221,7 +221,7 @@ core utilization ratio reported:
 
 ![image](https://github.com/user-attachments/assets/cd05068d-ab6e-4ef9-a4bd-85e85703d882)
 
-$$ \texttt{Calculated core utilization ratio from observation} = {147712.92 \over 420473.26} = 35.13\texttt{%} $$
+$$ \texttt{Calculated core utilization ratio from observation} = {147712.92 \over 420473.26} = 0.3513 $$
 
 #### <h2 id="header-2-3-2-3">Reviewing the def using Magic</h2>
 
