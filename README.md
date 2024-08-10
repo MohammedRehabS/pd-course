@@ -32,6 +32,9 @@
 			<ul>
 				<li><a href="#header-2-2-2">Placement</a></li>
 			</ul>
+			<ul>
+				<li><a href="#header-2-2-3">Cell Design and Characterization flows</a></li>
+			</ul>
 		</ul>
 		<ul>
 			<li><a href="#header-2-3">Floorplanning lab</a></li>
@@ -176,6 +179,18 @@ After this is done then congestion aware analysis considering ideal clocks.
 Generally placement is done in two stages
 1. Global placement : Coarse placement and no legalizations considered
 2. Detailed placement: legalizations happen here where instances are placed according to standard cell rows.
+
+### <h1 id="header-2-2-3">Cell Design and Characterization flows:</h1>
+
+![image](https://github.com/user-attachments/assets/662a8ab2-6471-4804-a6c5-8bc00db5068d)
+
+We need to first design a cell according to the inputs as shown above. Spice models contain fixed information from foundry like VTHO, tox, capacitances, etc. There could be a lot of user defined specification like cell height, drive strengths, VM (point where Vin == Vout), position of pins, supply voltage, pin layers required, drawn gate length.
+
+In circuit design the circuit is implemented to get required functionality and W/L is found for PMOS and NMOS for creating layout.
+
+Euler's path is used to come up with stick diagrams and are then implemented according to DRC rules.
+
+The stage is design is complete. Now the characterization is performed to obtain .libs.
 
 ## <h1 id="header-2-3">Floorplanning lab</h1>
 
