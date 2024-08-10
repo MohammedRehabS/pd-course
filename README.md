@@ -37,6 +37,7 @@
 		<li><a href="#header-2-3">Floorplanning lab</a></li>
 		<ul>
 			<li><a href="#header-2-3-1">Running Floorplanning</a></li>
+		</ul>
 		<ul>
 			<li><a href="#header-2-3-2">Reviewing results</a></li>
 			<u1>
