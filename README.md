@@ -51,8 +51,18 @@
 				</u1>
 			</ul>
 		</ul>
+		<ul>
+			<li><a href="#header-2-4">Placement lab</a></li>
+			<ul>
+				<li><a href="#header-2-4-1">Running Placement</a></li>
+			</ul>
+			<ul>
+				<li><a href="#header-2-4-2">Reviewing results</a></li>
+			</ul>
+		</ul>
 	</ul>
 </div>
+
 
 # <h1 id="header-0">Overview</h1>
 
