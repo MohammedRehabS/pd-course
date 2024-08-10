@@ -201,7 +201,7 @@ Charactization is of three types and performed in GUNA(spice simulator):
 
 ### <h1 id="header-2-2-4">Timing Characterization:</h1>
 
-For timing characterizations following definitions are important:
+For timing characterizations following definitions are important to calculate slew and delays:
 
 ![image](https://github.com/user-attachments/assets/ebfca498-3457-486d-9305-aa1347a9ab63)
 
