@@ -166,6 +166,11 @@ If there are hard paths then placement is performed and then based on wireload e
 
 ![image](https://github.com/user-attachments/assets/656327cd-f74e-41fd-9038-da219b94c956)
 
+After this is done then congestion aware timing analysis considering ideal clocks.
+
+Generally placement is done in two stages
+1. Global placement : Coarse placement and no legalizations considered
+2. Detailed placement: legalizations happen here where instances are placed according to standard cell rows.
 
 ## <h2 id="header-2-3">Floorplanning lab</h2>
 
