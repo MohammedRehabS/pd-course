@@ -7,7 +7,7 @@
 </div>
 <div class="toc">
 	<ul>
-    		<li><a href="#header-1">Day 1 Synthesis and flop ratio calculation</a></li>
+    		<li><a href="#header-1">Day 1: Synthesis and flop ratio calculation</a></li>
 		<ul>
         		<li><a href="#header-1-1"> Summary</a></li>
  		</ul>
@@ -20,7 +20,7 @@
  </div>
  <div class="toc">
   	<ul>
-    		<li><a href="#header-2">Day 2 </a></li>
+    		<li><a href="#header-2">Day 2: Floorplanning, placement and introduction to cell design and characterization</a></li>
 		<ul>
         		<li><a href="#header-2-1"> Summary</a></li>
 		</ul>
