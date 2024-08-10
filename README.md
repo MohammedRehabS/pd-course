@@ -192,6 +192,10 @@ Euler's path is used to come up with stick diagrams and are then implemented acc
 
 The stage is design is complete. Now the characterization is performed to obtain .libs.
 
+Charactization is of three types and performed in GUNA(spice simulator):
+
+![image](https://github.com/user-attachments/assets/8dab416c-f6ad-4444-92e0-d37c0eb9b5bc)
+
 ## <h1 id="header-2-3">Floorplanning lab</h1>
 
 ### <h1 id="header-2-3-1">Running Floorplanning</h1>
