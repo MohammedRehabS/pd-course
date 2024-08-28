@@ -341,7 +341,7 @@ Next step is to remove or etch out the Si3N4.
 
 Now we need to create nwell and pwell
 
-**N-well is used for pmos fabrication and P-well is used for nmos fabrication**. Both can't be done at the same time. We need to protect the one area while we fabricate the other.
+N-well is used for pmos fabrication and P-well is used for nmos fabrication. Both can't be done at the same time. We need to protect the one area while we fabricate the other.
 
 The same steps will be done here also, deposit a layer of photoresist then define pattren of layer you want to protect. So we are using Mask2 to protect one area first.
 
