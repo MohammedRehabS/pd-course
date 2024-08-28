@@ -17,6 +17,7 @@
 		<ul>
 			<li><a href="#header-1-3">Running Synthesis to figure out flop ratio</a></li>
 		</ul>
+	</ul>
  </div>
  <div class="toc">
   	<ul>
@@ -302,3 +303,243 @@ Placed def is viewed in magic:
 ![image](https://github.com/user-attachments/assets/9ad1ca7f-3ece-4301-b702-5a9bc497706e)
 
 ![image](https://github.com/user-attachments/assets/ebbcc4e6-3bf3-4b28-89a0-5d9a34b7f273)
+
+
+# Day 3
+## 16 Mask layers based CMOS fabrication process
+
+First we need to select a substrate, here we select p type
+
+![image](https://github.com/user-attachments/assets/0aa527d2-be4e-4c68-bd9b-67d6b690f93d)
+
+To create active regions first we need to grow silicon oxide layer which will act as an insulator. Then deposit Si3N4 on top of it. Then we deposit photoresist and then project UV light over regions we what to be removed.Red regions are protected using a mask. Rest of the region reacts and can be washed out.
+
+![image](https://github.com/user-attachments/assets/68b59a7f-4359-4831-9bbe-6d895dca5a50)
+  
+![image](https://github.com/user-attachments/assets/63f98756-3a53-48c8-8273-ead08c04227a)
+
+![image](https://github.com/user-attachments/assets/1405c7e8-f7a0-4b16-8e8e-f5d395f9a48d)
+
+Si3N4 is also etched out in the regions required.
+
+![image](https://github.com/user-attachments/assets/847260b1-9685-4e07-a50c-1b90cd6db079)
+
+Next step is to remove the photoresist.
+
+![image](https://github.com/user-attachments/assets/ea887a0d-cf51-47f0-badc-084acf164aef)
+
+We put the above output in an oxidation furnace which will create isolation regions. This process is called LOCOS (LOCal Oxidation of Silicon)
+
+![image](https://github.com/user-attachments/assets/32597180-4dff-40b2-8b1f-61750bd5e4ed)
+
+
+![image](https://github.com/user-attachments/assets/aec1ffd4-4ab5-4b30-af15-b50c922915cf)
+
+Next step is to remove or etch out the Si3N4.
+
+![image](https://github.com/user-attachments/assets/5899aacd-c163-401b-996a-17b2c2aa724b)
+
+Now we need to create nwell and pwell
+
+**N-well is used for pmos fabrication and P-well is used for nmos fabrication**. Both can't be done at the same time. We need to protect the one area while we fabricate the other.
+
+The same steps will be done here also, deposit a layer of photoresist then define pattren of layer you want to protect. So we are using Mask2 to protect one area first.
+
+   ![image](https://github.com/user-attachments/assets/7769effc-6a34-422e-84b4-c01214650cb2)
+
+Next step is to expose this photoresist to the UV light. So, same this UV light will react only to the exposed photoresist area.
+
+   ![image](https://github.com/user-attachments/assets/e64ca778-f9be-4716-a5b2-0f2489bbe2b7)
+
+   When we wash this particular thing into a solution, that exposed area of photoresist will washed away.
+
+   ![image](https://github.com/user-attachments/assets/58baac40-94a5-4ad8-9bd5-a2ac6296192f)
+
+
+We do ion implantation with boron atoms in this region. The oxide layer will be damnaged but will be taken care later.
+
+   ![image](https://github.com/user-attachments/assets/70f5da1e-fc9d-4c7d-973b-856449d79c15)
+
+Same steps are performed for nwell creation with phosphorus.
+
+   ![image](https://github.com/user-attachments/assets/9bd5d112-bb73-46aa-b49a-0f09da3733ef)
+
+
+   ![image](https://github.com/user-attachments/assets/fcd22667-2e1d-431b-8155-230a1ea6cbfc)
+
+   ![image](https://github.com/user-attachments/assets/0a495508-a5f7-4b94-9527-7580d1dd5f7c)
+
+Now heat up the chip to reach required depth for the n and p well
+
+   ![image](https://github.com/user-attachments/assets/c4efcec4-d0a9-4fbb-a842-be2d5ce8871b)
+
+Threshold voltage is a function of doping concentration and oxide thickness. Hence it is important to be able to vary this.
+
+   ![image](https://github.com/user-attachments/assets/5d45c934-713f-42d9-a8ec-bc20a1cbb156)
+
+   ![image](https://github.com/user-attachments/assets/9ef42721-dbb4-4808-a6b7-2b5a12ea2672)
+
+
+   ![image](https://github.com/user-attachments/assets/3ae10306-48cf-4546-a899-6e6871667167)
+
+   ![image](https://github.com/user-attachments/assets/936a2108-554e-419f-8766-2eac93895317)
+
+   ![image](https://github.com/user-attachments/assets/2933ba62-40e8-4124-9b9a-9defe21d43c9)
+
+   ![image](https://github.com/user-attachments/assets/b69c62f8-5ed7-4206-b7d3-c91815f638b4)
+
+   Fixing of oxide that got damaged while Ion implantations.
+
+   ![image](https://github.com/user-attachments/assets/4d15488f-3cfc-40c1-8102-b2da31ccd0d1)
+
+   ![image](https://github.com/user-attachments/assets/d02cb341-3707-4cff-a31a-55a3f6f386ec)
+
+Now we need to form of gate step:
+
+   ![image](https://github.com/user-attachments/assets/bcc47194-673b-4f3c-9513-2b25f97a70ee)
+
+   ![image](https://github.com/user-attachments/assets/62744e7a-3c3d-439f-8004-1e916f7f54e1)
+
+   ![image](https://github.com/user-attachments/assets/be715c8f-b0c5-488f-b91d-2565ef063127)
+
+   ![image](https://github.com/user-attachments/assets/3d083492-98ef-4056-97c3-59a7250a8f6c)
+
+   ![image](https://github.com/user-attachments/assets/ae966f7f-93cc-4c89-a651-7970966a3ea2)
+
+   ![image](https://github.com/user-attachments/assets/5f44a829-0bf9-49ae-8752-55269d6f2f13)
+
+   ![image](https://github.com/user-attachments/assets/70ba1725-0c13-418a-b0e3-caa8db0a915a)
+
+   We try to achieve P+,P-,N in N-well when trying to fabricate the PMOS.
+
+   Similarly, for NMOS, N+,N-,P doping profile is desired.
+
+   ![image](https://github.com/user-attachments/assets/48fccbe5-4ef9-44a7-b64f-2aa9eea0ef05)
+
+The reason for this:
+
+   1. Hot electron effect:
+
+		![image](https://github.com/user-attachments/assets/71d4de63-158f-43e4-901a-ee4c51916d16)
+
+   2. Short channel effect:
+
+		![image](https://github.com/user-attachments/assets/0b78b2c0-bbad-4b17-bf0f-476f7293895f)
+
+
+   ![image](https://github.com/user-attachments/assets/cc357fa6-0946-40d5-872f-c85aacb03604)
+
+   ![image](https://github.com/user-attachments/assets/07ee560b-3d77-4049-b321-c905c618f5ea)
+
+   ![image](https://github.com/user-attachments/assets/1dd03dc8-1390-452c-827b-020782f66ae3)
+
+   ![image](https://github.com/user-attachments/assets/76e29f5e-ac49-430e-95d8-c80330005aae)
+
+   We add some side wall spacers to help avoid doping the p+ or n+ diffusion deep into the gate.
+
+   ![image](https://github.com/user-attachments/assets/93090819-44a2-4c83-9709-3bd0c7bc96ae)
+
+   ![image](https://github.com/user-attachments/assets/a28b7dcc-8956-4b0f-97d9-40eeb61f5877)
+
+   ![image](https://github.com/user-attachments/assets/d69aac7a-c49a-410a-81ff-1ad53e8072c8)
+
+   ![image](https://github.com/user-attachments/assets/9664121c-97ed-4bf0-9487-73745d63df27)
+
+
+   The next step is to add a thin layer of screen oxide to avoid the effect of channeling where ions with high velocity could go very deep into the substrate.
+
+   ![image](https://github.com/user-attachments/assets/1a77e5fb-ab33-4969-bbbb-8fc0688add3f)
+
+   ![image](https://github.com/user-attachments/assets/c92cd386-e783-443b-b0be-e0a05f62f497)
+
+   ![image](https://github.com/user-attachments/assets/7bb738cc-858d-4799-a557-42dca97e4ca4)
+
+   ![image](https://github.com/user-attachments/assets/36c05222-67a8-4667-85f3-d7c51cdec4bd)
+
+   ![image](https://github.com/user-attachments/assets/a9317ab5-9154-47d6-badb-e6fb542376eb)
+
+   ![image](https://github.com/user-attachments/assets/f19a0d29-c207-49e4-a4c5-32d4ee922c7b)
+
+   ![image](https://github.com/user-attachments/assets/0fc00b73-49a6-4387-92a0-972a24d03a67)
+
+   So, we will put this half built pmos and nmos to high temperature furnace.
+
+   ![image](https://github.com/user-attachments/assets/87048080-6f8d-4661-8105-c8c52c627172)
+
+Now we need to create contacts which will be accesible to designer.
+
+   ![image](https://github.com/user-attachments/assets/232fc1fd-3bf0-4c4e-9f35-5e0ff5d0e703)
+
+   ![image](https://github.com/user-attachments/assets/18783ae3-4c9d-4d53-a756-2e3a1f66291d)
+
+   ![image](https://github.com/user-attachments/assets/a1cb4afc-c770-4f36-ba06-95d327bb007e)
+
+   ![image](https://github.com/user-attachments/assets/d22c75f2-446a-4b49-a175-29d3212cfdc2)
+
+   ![image](https://github.com/user-attachments/assets/f07d62c9-1edf-49c4-b771-ac0b3009fca1)
+
+   ![image](https://github.com/user-attachments/assets/70c6d039-5bcc-4444-8772-c3a37d8836c2)
+
+   ![image](https://github.com/user-attachments/assets/7e04045c-d2dd-41fa-b768-ac0812cafac6)
+
+   ![image](https://github.com/user-attachments/assets/01de4957-986a-4f85-a441-204f5f2ca5e7)
+
+   ![image](https://github.com/user-attachments/assets/88a475c9-825a-473d-8646-92fc28c0a01c)
+
+   ![image](https://github.com/user-attachments/assets/05baa5ad-bd03-4663-b6f3-62b1bf3ea218)
+
+   ![image](https://github.com/user-attachments/assets/7b08776c-93d3-4900-8e07-9fe39e33b5e7)
+
+   ![image](https://github.com/user-attachments/assets/0c1e05cf-7712-4e9a-a1ee-0e918ba141bf)
+
+   To create the layer stack we need a planar surface so we need to planerize this surface using CMP.
+
+   ![image](https://github.com/user-attachments/assets/004e0659-e5ca-4ce5-a9c4-317a82a30b44)
+
+   ![image](https://github.com/user-attachments/assets/c0fae799-4765-4d29-ac28-c1d4e0195379)
+
+   ![image](https://github.com/user-attachments/assets/fb9a7732-5e3f-4d6d-9e16-3c305b10163a)
+
+   ![image](https://github.com/user-attachments/assets/d65f6ec4-949e-4636-a7e8-fd68ae5b1c0f)
+
+   ![image](https://github.com/user-attachments/assets/d2fbb614-89a2-4c12-91e7-d3c5918db197)
+
+   ![image](https://github.com/user-attachments/assets/d8df0306-a66c-47ca-a411-507bf0dfc835)
+
+   ![image](https://github.com/user-attachments/assets/d3f693dc-728b-4938-b272-480c438596fd)
+
+   ![image](https://github.com/user-attachments/assets/12503801-a485-4adb-851a-52693f4d317b)
+
+   ![image](https://github.com/user-attachments/assets/9fd4023b-bc83-43c4-bed6-49ae5e15b49d)
+
+   ![image](https://github.com/user-attachments/assets/281eec81-4990-4301-ad20-eb9e66886f9f)
+
+   ![image](https://github.com/user-attachments/assets/1a20b5a3-1ab5-484f-a043-508f7580f00c)
+
+   ![image](https://github.com/user-attachments/assets/98f0c330-8c40-4386-a3fe-f82ad4a536af)
+
+   Till here, we have the local interconnects (0 level of metal), 1st level of interconnects (Aluminium interconnects).
+
+   Now the next step is to again take this metal levels to the higher level metal.
+
+   ![image](https://github.com/user-attachments/assets/43416f56-f290-4abc-a307-28ccfdf8c027)
+
+   ![image](https://github.com/user-attachments/assets/3ac165de-2668-46c0-886b-5bc593fb5e98)
+
+   ![image](https://github.com/user-attachments/assets/02fc3279-0195-4297-af64-5b14250fd7e8)
+
+   TiN acts an additional layer to SiO2 and acts as the barrier between lower and higher metal layers.
+
+   ![image](https://github.com/user-attachments/assets/6586fa91-4e71-4cf8-85e6-19c13afb89e2)
+
+   ![image](https://github.com/user-attachments/assets/112c38cc-8b98-4082-b1a6-250480c812be)
+
+   ![image](https://github.com/user-attachments/assets/af3ed65d-3751-419c-97ce-7fcb2c08f654)
+
+   ![image](https://github.com/user-attachments/assets/16620b28-a6e4-4dc9-94c1-41d63797c3eb)
+
+   Final result:
+
+   ![image](https://github.com/user-attachments/assets/c5033982-833d-410e-9984-44ef950a8ec6)
+
+
