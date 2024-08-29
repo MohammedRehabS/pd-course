@@ -554,17 +554,17 @@ Now we need to create contacts which will be accesible to designer.
 
          Click on the green Code button and then copy the URL.
 
-         ![image](https://github.com/user-attachments/assets/0792188e-23cb-447a-b2a8-7ffa6aaf0f2e)
+![image](https://github.com/user-attachments/assets/0792188e-23cb-447a-b2a8-7ffa6aaf0f2e)
 
          Now use **git clone** command in the terminal and paste the link.
 
-         ![image](https://github.com/user-attachments/assets/074d1661-413c-4699-a352-854381a52973)
+![image](https://github.com/user-attachments/assets/074d1661-413c-4699-a352-854381a52973)
 
          A new folder **vsdstdcelldesign** got created in openlane dir.
 
-         ![image](https://github.com/user-attachments/assets/61f5a8f6-aef4-41f8-a250-d5885d246c6e)
+![image](https://github.com/user-attachments/assets/61f5a8f6-aef4-41f8-a250-d5885d246c6e)
 
-         ![image](https://github.com/user-attachments/assets/fa8c82e6-6882-4d94-92b1-fa2fc3169a33)
+![image](https://github.com/user-attachments/assets/fa8c82e6-6882-4d94-92b1-fa2fc3169a33)
 
    2. Now, we will open the mag file and see the different layers that are used in the building of the inverter.
 
