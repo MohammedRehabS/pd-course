@@ -556,3 +556,41 @@ Copied and the tech file and viewed the design in Magic
 
 ![image](https://github.com/user-attachments/assets/46a13527-0675-457e-bc50-25558dcdeb53)
 
+Checking NMOS and PMOS
+
+![image](https://github.com/user-attachments/assets/d05532a1-b757-404a-a632-4d48ff529626)
+
+![image](https://github.com/user-attachments/assets/15c340b3-81b3-4d98-b6a7-2bcad4b065b5)
+
+
+dimensions of inverter
+![image](https://github.com/user-attachments/assets/c803808f-36b5-4f0c-af11-ccb8dce3d9b5)
+
+extracting the spice netlist of the design
+![image](https://github.com/user-attachments/assets/adb104b5-a914-4d5a-a770-22603342a18a)
+
+Output spice file:
+![image](https://github.com/user-attachments/assets/73878d65-d1c8-46ab-bd51-d0ac9cc159fc)
+
+Editted spice file:
+![image](https://github.com/user-attachments/assets/c72ced1c-f76d-4b9c-ba2c-20146ba92c18)
+
+running the spice netlist:
+![image](https://github.com/user-attachments/assets/fce42657-0184-49f5-a219-da49c2c66cf5)
+
+Calculating parameters:
+Output rise transition time:
+
+![image](https://github.com/user-attachments/assets/13413161-2571-4508-aef1-b48681a9b1bc)
+
+Output fall transition time:
+
+![image](https://github.com/user-attachments/assets/d7dc06e8-db90-4ffe-a5e0-e04c9fed0ebb)
+
+Cell rise delay:
+
+![image](https://github.com/user-attachments/assets/994d60c1-8d47-4c33-9baa-c1dd21ab25d7)
+
+Cell fall delay:
+
+![image](https://github.com/user-attachments/assets/678c4810-1d85-4bc5-be9d-9c2a3bebe0cc)
