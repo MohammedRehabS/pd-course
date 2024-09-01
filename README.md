@@ -62,15 +62,27 @@
 </div>
 <div class="toc">
 	<ul>
-    		<li><a href="#header-1">Day 1: Synthesis and flop ratio calculation</a></li>
+    		<li><a href="#header-3">Day 3: Jumpstarting, spice simulations and DRCs</a></li>
 		<ul>
-        		<li><a href="#header-1-1"> Summary</a></li>
+        		<li><a href="#header-3-1"> Jumpstarting</a></li>
  		</ul>
 		<ul>
-			<li><a href="#header-1-2">Paths and setup</a></li>
+			<li><a href="#header-3-2">16 Mask layers based CMOS fabrication process</a></li>
 		</ul>
 		<ul>
-			<li><a href="#header-1-3">Running Synthesis to figure out flop ratio</a></li>
+			<li><a href="#header-3-3">Spice simulation of CMOS inverter using NGSpice</a></li>
+			<u1>
+				<li><a href="#header-3-3-1">Lab steps to git clone vsdstdcelldesign</a></li>
+			</u1>
+			<u1>
+				<li><a href="#header-3-3-2">Reviewing the layout</a></li>
+			</u1>
+			<u1>
+				<li><a href="#header-3-3-3">Spice simulation</a></li>
+			</u1>
+		</ul>
+		<ul>
+			<li><a href="#header-3-4">DRC checks</a></li>
 		</ul>
 	</ul>
  </div>
