@@ -698,11 +698,12 @@ tech load sky130A.tech (generally not recommended but since just rules its okay)
 
 Run DRC again. drc check
 
-# Day 4
+# <h1 id="header-4">Day 4: running with custom cell, STA and CTS</h1>
 
-## Running with custom cell
+## <h1 id="header-4-1">Running with custom cell</h1>
 
-### Dumping lef output
+### <h1 id="header-4-1-1">Dumping lef output</h1>
+
 tracks info file
 
 ![image](https://github.com/user-attachments/assets/b312a07b-3269-4aa3-82bb-9ab921c9f158)
@@ -742,7 +743,7 @@ Total slew:
 
 ![image](https://github.com/user-attachments/assets/b7841fcb-afde-4fd2-879d-465b4c624470)
 
-### Reducing slack
+### <h1 id="header-4-1-2">Reducing slack</h1>
 
 STA reports also dumped out. Negative slack hence need to change some synthesis parameters
 
@@ -781,7 +782,7 @@ Reviewing the def
 
 ![image](https://github.com/user-attachments/assets/cd91384e-b067-4a39-9a6a-62ca49266b7d)
 
-## STA on a netlist provided in the standard cell design
+## <h1 id="header-4-2">STA on a netlist provided in the standard cell design</h1>
 
 Edited sta.conf
 
@@ -810,8 +811,7 @@ writing out the edited file:
 
 ![image](https://github.com/user-attachments/assets/3b421c8c-dcd5-4e04-be40-3f982eec7b7a)
 
-
-## Running CTS
+## <h1 id="header-4-3">Running CTS</h1>
 
 Using the command run_cts
 
