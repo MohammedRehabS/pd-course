@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b4a42f8c-74fb-4d64-b1a6-da25f3440b6c)# Contents
+# Contents
  
 <div class="toc">
 	<ul>
@@ -770,7 +770,7 @@ The output of sta sta.conf
 slack is violating
 
 ![image](https://github.com/user-attachments/assets/febc3a09-bacc-4b05-9ae0-f3e1d5858137)
-
+![image](https://github.com/user-attachments/assets/b4a42f8c-74fb-4d64-b1a6-da25f3440b6c)
 
 Bringing it down by replacing cell with higher drive strength in worst paths we reach:
 
