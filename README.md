@@ -552,5 +552,7 @@ Downloaded the package containing the inverter design.
 
 Copied and the tech file and viewed the design in Magic
 
+![image](https://github.com/user-attachments/assets/43eb37f2-7fb1-4ad1-aa68-b622fe566d26)
 
+![image](https://github.com/user-attachments/assets/46a13527-0675-457e-bc50-25558dcdeb53)
 
