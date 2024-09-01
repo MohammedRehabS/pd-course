@@ -655,73 +655,24 @@ loading poly.mag
 
 ![image](https://github.com/user-attachments/assets/4e2c6207-5158-4091-a430-9f1c851bb14a)
 
- 2. Let's focus on the incorrect poly.9 . poly.9 rule says spacing between npolyres and poly should be minimum 0.48um.
+Rule: 
+![image](https://github.com/user-attachments/assets/3f18ba6a-4510-41a7-87b2-98f9b17c7326)
 
-![image](https://github.com/user-attachments/assets/26ffa67c-a5eb-4f77-bbfb-2a40e5db304a)
+Open tech file:
+![image](https://github.com/user-attachments/assets/5d1aa5fe-d32e-4af6-8b3f-2fbeddd7d12a)
 
- 3. As seen, the distance between npolyres and poly layer is 0.21um which is less than 0.48 um and it should be flagged as DRC violaition. However, it is not shown as DRC violation. Reason being the sky130A.tech file does not have this spacing rule included.
+![image](https://github.com/user-attachments/assets/d8d5836b-96d7-405a-856e-80ab1eda2309)
 
-![image](https://github.com/user-attachments/assets/713292ac-b02b-44aa-bd2f-c7bd874a29e6)
+No rule defined between poly resistor to poly. Adding rule:
+![image](https://github.com/user-attachments/assets/3eade8c9-2e8a-4b9b-aad5-abe29cf99a22)
 
- 4. Updating poly.9 rule in sky130A.tech. Adding allpolynonres as it's an alias for *poly
-
-![image](https://github.com/user-attachments/assets/e7d6df13-adfa-479c-9dee-8e9a54dbe5ee)
-![image](https://github.com/user-attachments/assets/735d2ef9-b912-4ff6-8c4d-b4b8db846055)
-
- 5. Using command "tech load sky130A.tech" load the updated tech file to see if now the DRC violations are flagged.
-
- 6. After "drc check" command, DRC violation are seen in layout now, which were missing earlier.
- ![image](https://github.com/user-attachments/assets/3f48f5b8-035c-4506-8099-53a205a7a91e)
-
-## SKY_L7 - Lab exercise to implement poly resistor spacing to diff and tap
-
-1. Copy the three resistors (npolyres, ppolyres, xpolyres) by creating a bbox by left click and right click and pressing the key 'a' . Paste it by moving the cursor and pressing key 'c'
-
-![image](https://github.com/user-attachments/assets/b534dad3-7e2a-47cd-a0b9-821321f0f9e1)
-
-2. Now add the ndiffusion and pdiffusion layers above and below the resistors as shown by creating a bbox and selecting the layer from layers panel and pressing key 'p'. The DRC violations increase to 49 from 35.
-
-![image](https://github.com/user-attachments/assets/0b60c9ab-eb20-4de0-8524-c95620faadec)
-
-3. Adding nwell below.
-
-![image](https://github.com/user-attachments/assets/cdd9ffbc-7a54-499d-83e0-5e1cc6dc3ab4)
-
-4. modified the tech file to include the drc rule for npolyres and ntap & diffusion. Now DRC errors increased to 51.
-
-5. Use drc why command to know the reason for drc violation
-
-![image](https://github.com/user-attachments/assets/c1a3a3db-d1fd-40d6-a431-db5cea7eebd3)
+![image](https://github.com/user-attachments/assets/f40ad94c-39da-4731-96d8-265e42076564)
 
 
-## SKY_L8 - Lab challenge exercise to describe DRC error as geometrical construct
+tech load sky130A.tech (generally not recommended but since just rules its okay)
 
-1. Load nwell.mag layout and zoom to nwell.6
-
-![image](https://github.com/user-attachments/assets/c05299bc-6024-49ee-b58d-51831789e0cd)
-
-2. type "cif ostyle drc" in tkcon
-
-3.
-
- ![image](https://github.com/user-attachments/assets/6bca2816-f2e5-4bb4-afaf-a1e18f72731c)
-
-## SKY_L9 - Lab challenge to find missing or incorrect rules and fix them
-
-1. Here, the nwell is not tapped. but no DRC violaion is seen.
-
-![image](https://github.com/user-attachments/assets/778a3b5a-e06c-4a3b-836b-2cbc8b49e7f5)
-
-2. modifying the rules in tech file.
-
-3. After modifying the tech rules and changing the drc style to drc full, the nwell drc violatin is flagged. As seen below, nwell is untapped and is highlighted for drc.
-
-![image](https://github.com/user-attachments/assets/d14fc6c1-b95f-41d7-93f9-1253f31ca01a)
-
-4. Addinn a new nwell with a substrate contact in it shows no drc violation.
-
-![image](https://github.com/user-attachments/assets/c8f2c1b4-5fa0-4220-91cd-5dd996c4598b)
-
+Run DRC again. drc check
+![image](https://github.com/user-attachments/assets/ae0453c0-ff7e-4392-b371-248bf72957a7)
 
 
 # Day 4
