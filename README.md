@@ -734,8 +734,6 @@ set ::env(SYNTH_SIZING) 1
 
 Overwriting the design and running synthesis again:
 
-![image](https://github.com/user-attachments/assets/8942a6ed-b076-451f-b072-c2c3449ee381)
-
 
 wns and tns are good now:
 
@@ -752,3 +750,11 @@ For floor plan we need to run the following commands which are the inner command
 	place_io
 	global_placement_or
 	tap_decap_or
+
+run_placement is run after this
+
+Reviewing the def
+
+![image](https://github.com/user-attachments/assets/cd91384e-b067-4a39-9a6a-62ca49266b7d)
+
+ 
