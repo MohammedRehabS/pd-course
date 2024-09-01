@@ -579,18 +579,27 @@ running the spice netlist:
 ![image](https://github.com/user-attachments/assets/fce42657-0184-49f5-a219-da49c2c66cf5)
 
 Calculating parameters:
+
 Output rise transition time:
 
 ![image](https://github.com/user-attachments/assets/13413161-2571-4508-aef1-b48681a9b1bc)
+
+59.48ps
 
 Output fall transition time:
 
 ![image](https://github.com/user-attachments/assets/d7dc06e8-db90-4ffe-a5e0-e04c9fed0ebb)
 
+42.61ps
+
 Cell rise delay:
 
 ![image](https://github.com/user-attachments/assets/994d60c1-8d47-4c33-9baa-c1dd21ab25d7)
 
+58.31ps
+
 Cell fall delay:
 
 ![image](https://github.com/user-attachments/assets/678c4810-1d85-4bc5-be9d-9c2a3bebe0cc)
+
+24.61ps
