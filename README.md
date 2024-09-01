@@ -60,7 +60,20 @@
 		</ul>
 	</ul>
 </div>
-
+<div class="toc">
+	<ul>
+    		<li><a href="#header-1">Day 1: Synthesis and flop ratio calculation</a></li>
+		<ul>
+        		<li><a href="#header-1-1"> Summary</a></li>
+ 		</ul>
+		<ul>
+			<li><a href="#header-1-2">Paths and setup</a></li>
+		</ul>
+		<ul>
+			<li><a href="#header-1-3">Running Synthesis to figure out flop ratio</a></li>
+		</ul>
+	</ul>
+ </div>
 
 # <h1 id="header-0">Overview</h1>
 
@@ -304,10 +317,9 @@ Placed def is viewed in magic:
 
 ![image](https://github.com/user-attachments/assets/ebbcc4e6-3bf3-4b28-89a0-5d9a34b7f273)
 
+# <h1 id="header-3">Day 3</h1>
 
-# Day 3
-
-## Jumpstarting
+## <h1 id="header-3-1">Jumpstarting</h1>
 
 ![image](https://github.com/user-attachments/assets/6dfbf772-c5ca-4faf-8b77-ee0ec701e9c7)
 
@@ -316,8 +328,7 @@ And as can be seen floorplan changed:
 
 ![image](https://github.com/user-attachments/assets/1b4eac88-c970-42a7-a391-aa47caeb4dcd)
 
-
-## 16 Mask layers based CMOS fabrication process
+## <h1 id="header-3-2">16 Mask layers based CMOS fabrication process</h1>
 
 First we need to select a substrate, here we select p type
 
@@ -553,15 +564,16 @@ Now we need to create contacts which will be accesible to designer.
 
    ![image](https://github.com/user-attachments/assets/c5033982-833d-410e-9984-44ef950a8ec6)
 
-## Spice simulation of CMOS inverter using NGSpice
+## <h1 id="header-3-3">Spice simulation of CMOS inverter using NGSpice</h1>
 
-### Lab steps to git clone vsdstdcelldesign
+
+### <h1 id="header-3-3-1"> Lab steps to git clone vsdstdcelldesign</h1>
 
 Downloaded the package containing the inverter design.
 
 ![image](https://github.com/user-attachments/assets/43cc9d69-1236-445a-858a-ffce1a6e1197)
 
-### Reviewing the layout
+### <h1 id="header-3-3-2">Reviewing the layout</h1>
 
 Copied and the tech file and viewed the design in Magic
 
@@ -579,7 +591,7 @@ Checking NMOS and PMOS
 dimensions of inverter
 ![image](https://github.com/user-attachments/assets/c803808f-36b5-4f0c-af11-ccb8dce3d9b5)
 
-### Spice simulation 
+### <h1 id="header-3-3-3">Spice simulation</h1>
 
 extracting the spice netlist of the design
 ![image](https://github.com/user-attachments/assets/adb104b5-a914-4d5a-a770-22603342a18a)
@@ -619,7 +631,7 @@ Cell fall delay:
 
 24.61ps
 
-## DRC checks
+## <h1 id="header-3-4">DRC checks</h1>
 
 Downloading drc tests
 
