@@ -1,4 +1,4 @@
-# Contents
+![image](https://github.com/user-attachments/assets/b4a42f8c-74fb-4d64-b1a6-da25f3440b6c)# Contents
  
 <div class="toc">
 	<ul>
@@ -757,4 +757,83 @@ Reviewing the def
 
 ![image](https://github.com/user-attachments/assets/cd91384e-b067-4a39-9a6a-62ca49266b7d)
 
- 
+## STA on a netlist provided in the standard cell design
+
+Edited sta.conf
+
+![image](https://github.com/user-attachments/assets/447bef63-446e-458f-bbbe-02881bdebd0c)
+
+The output of sta sta.conf
+
+![image](https://github.com/user-attachments/assets/1afe7809-c47d-4ba8-ac53-b0e3f88c435c)
+
+slack is violating
+
+![image](https://github.com/user-attachments/assets/febc3a09-bacc-4b05-9ae0-f3e1d5858137)
+
+
+Bringing it down by replacing cell with higher drive strength in worst paths we reach:
+
+![image](https://github.com/user-attachments/assets/abc6954a-807a-4dfd-8963-13ae46f13efe)
+
+Commands used:
+	replace_cell instance_name cell_to_be_replaced_with
+ 	report_checks -fields {net cap slew input_pins} -digits 4
+  	report_tns
+   	report_wns
+
+writing out the edited file:
+
+![image](https://github.com/user-attachments/assets/3b421c8c-dcd5-4e04-be40-3f982eec7b7a)
+
+
+## Running CTS
+
+Using the command run_cts
+
+![image](https://github.com/user-attachments/assets/d1dd3e0f-5a4b-4071-95a3-fc90d1c88f5b)
+
+output netlist:
+
+![image](https://github.com/user-attachments/assets/06bcadd4-389f-49cb-be5a-b12e18469104)
+
+
+To check timing post CTS the following commands are run:
+![image](https://github.com/user-attachments/assets/6a4e4904-95c2-491e-8f79-0ae5a8d27cd1)
+
+
+The output of analysis is:
+![image](https://github.com/user-attachments/assets/07b004db-f2d8-47c1-a468-54054db13cb7)
+
+
+Following commands are run to check the impact of removing the smallest buffer usable in CTS
+
+![image](https://github.com/user-attachments/assets/a7506475-38d8-43b0-a4cc-0d834432aadd)
+
+Running open road again on this:
+
+![image](https://github.com/user-attachments/assets/15f68213-4e0f-432b-808d-b8c841ecbddc)
+
+
+reporting clock skew for setup and hold
+
+![image](https://github.com/user-attachments/assets/389bbd47-8ba6-44b6-8c53-056a9b44e39d)
+
+# DAY 5
+
+## Generating PDN:
+
+![image](https://github.com/user-attachments/assets/e0458daf-e757-4091-bb2e-3b64ed498391)
+
+generated PDN:
+
+![image](https://github.com/user-attachments/assets/aeac0fd8-473c-49bf-aeec-2dd524a89216)
+
+## Running routing:
+
+run_routing command is used which uses TritonRoute to accomplish this:
+
+![image](https://github.com/user-attachments/assets/1fa02690-0517-4722-a171-8192bfecb3be)
+
+Finished routing:
+
