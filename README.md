@@ -314,7 +314,7 @@ Placed def is viewed in magic:
 And as can be seen floorplan changed:
 
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/1b4eac88-c970-42a7-a391-aa47caeb4dcd)
 
 
 ## 16 Mask layers based CMOS fabrication process
@@ -664,6 +664,7 @@ Open tech file:
 ![image](https://github.com/user-attachments/assets/d8d5836b-96d7-405a-856e-80ab1eda2309)
 
 No rule defined between poly resistor to poly. Adding rule:
+
 ![image](https://github.com/user-attachments/assets/3eade8c9-2e8a-4b9b-aad5-abe29cf99a22)
 
 ![image](https://github.com/user-attachments/assets/f40ad94c-39da-4731-96d8-265e42076564)
@@ -672,7 +673,39 @@ No rule defined between poly resistor to poly. Adding rule:
 tech load sky130A.tech (generally not recommended but since just rules its okay)
 
 Run DRC again. drc check
-![image](https://github.com/user-attachments/assets/ae0453c0-ff7e-4392-b371-248bf72957a7)
-
 
 # Day 4
+
+## Running with custom cell
+
+### Dumping lef output
+tracks info file
+
+![image](https://github.com/user-attachments/assets/b312a07b-3269-4aa3-82bb-9ab921c9f158)
+
+changing grid size:
+
+![image](https://github.com/user-attachments/assets/8535a2dc-3622-43de-b23c-7794e0caf394)
+
+width and height are 3 and 4 boxes respectively
+
+
+defining direction of all pins for lef output
+
+![image](https://github.com/user-attachments/assets/6a00af81-6da3-4cf0-8460-83c34bf3d33f)
+
+![image](https://github.com/user-attachments/assets/235ab438-05f2-4b81-a448-0f8265c11d44)
+
+
+Saving the lef file:
+
+![image](https://github.com/user-attachments/assets/324d585d-6e47-401f-ba90-5788d76fc399)
+
+
+copied lef file  and libs to src:
+
+![image](https://github.com/user-attachments/assets/72e976b1-974d-4d38-a614-481196fb58eb)
+
+Adding paths for libs and lefs in config.tcl
+
+![image](https://github.com/user-attachments/assets/a5c566d4-a6af-4d9a-8e9e-4ca8a99ca41f)
