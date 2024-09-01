@@ -619,7 +619,7 @@ Cell fall delay:
 
 24.61ps
 
-### DRC checks
+## DRC checks
 
 Downloading drc tests
 
