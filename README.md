@@ -708,4 +708,47 @@ copied lef file  and libs to src:
 
 Adding paths for libs and lefs in config.tcl
 
-![image](https://github.com/user-attachments/assets/a5c566d4-a6af-4d9a-8e9e-4ca8a99ca41f)
+![image](https://github.com/user-attachments/assets/60ca8a71-86dd-44d1-ba59-8a6db74c82fb)
+
+Prepping design and running synthesis:
+
+![image](https://github.com/user-attachments/assets/cbba1238-29e0-4f46-9e2d-e3b521d70ad6)
+
+Total slew:
+
+![image](https://github.com/user-attachments/assets/b7841fcb-afde-4fd2-879d-465b4c624470)
+
+### Reducing slack
+
+STA reports also dumped out. Negative slack hence need to change some synthesis parameters
+
+![image](https://github.com/user-attachments/assets/c583af30-7d1c-4ea7-9752-202519633ccd)
+
+Let's try optimising synthesis strategy according to delay will affect PPA
+
+set ::env(SYNTH_STRATEGY) "DELAY 3"
+
+Enabling cell sizing: 
+
+set ::env(SYNTH_SIZING) 1
+
+Overwriting the design and running synthesis again:
+
+![image](https://github.com/user-attachments/assets/8942a6ed-b076-451f-b072-c2c3449ee381)
+
+
+wns and tns are good now:
+
+![image](https://github.com/user-attachments/assets/d2bf78d3-4eec-42df-a98a-a9de9442f6a3)
+
+
+before and after:
+![image](https://github.com/user-attachments/assets/bfdc65ab-b035-47e6-914b-74787c95ff58)
+
+
+For floor plan we need to run the following commands which are the inner commands when we call run_floorplan:
+
+	init_floorplan
+	place_io
+	global_placement_or
+	tap_decap_or
