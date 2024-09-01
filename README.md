@@ -306,6 +306,17 @@ Placed def is viewed in magic:
 
 
 # Day 3
+
+## Jumpstarting
+
+![image](https://github.com/user-attachments/assets/6dfbf772-c5ca-4faf-8b77-ee0ec701e9c7)
+
+And as can be seen floorplan changed:
+
+
+![Uploading image.png…]()
+
+
 ## 16 Mask layers based CMOS fabrication process
 
 First we need to select a substrate, here we select p type
@@ -550,6 +561,8 @@ Downloaded the package containing the inverter design.
 
 ![image](https://github.com/user-attachments/assets/43cc9d69-1236-445a-858a-ffce1a6e1197)
 
+### Reviewing the layout
+
 Copied and the tech file and viewed the design in Magic
 
 ![image](https://github.com/user-attachments/assets/43eb37f2-7fb1-4ad1-aa68-b622fe566d26)
@@ -565,6 +578,8 @@ Checking NMOS and PMOS
 
 dimensions of inverter
 ![image](https://github.com/user-attachments/assets/c803808f-36b5-4f0c-af11-ccb8dce3d9b5)
+
+### Spice simulation 
 
 extracting the spice netlist of the design
 ![image](https://github.com/user-attachments/assets/adb104b5-a914-4d5a-a770-22603342a18a)
@@ -603,3 +618,4 @@ Cell fall delay:
 ![image](https://github.com/user-attachments/assets/678c4810-1d85-4bc5-be9d-9c2a3bebe0cc)
 
 24.61ps
+
