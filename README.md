@@ -546,33 +546,11 @@ Now we need to create contacts which will be accesible to designer.
 
 ### Lab steps to git clone vsdstdcelldesign
 
-     1.  We will git clone one of the repositories that is custom made for this workshop.
+Downloaded the package containing the inverter design.
 
-         Git repository link: https://github.com/nickson-jose/vsdstdcelldesign
+![image](https://github.com/user-attachments/assets/43cc9d69-1236-445a-858a-ffce1a6e1197)
 
-         **How to git clone**?
+Copied and the tech file and viewed the design in Magic
 
-         Click on the green Code button and then copy the URL.
 
-![image](https://github.com/user-attachments/assets/0792188e-23cb-447a-b2a8-7ffa6aaf0f2e)
-
-         Now use **git clone** command in the terminal and paste the link.
-
-![image](https://github.com/user-attachments/assets/074d1661-413c-4699-a352-854381a52973)
-
-         A new folder **vsdstdcelldesign** got created in openlane dir.
-
-![image](https://github.com/user-attachments/assets/61f5a8f6-aef4-41f8-a250-d5885d246c6e)
-
-![image](https://github.com/user-attachments/assets/fa8c82e6-6882-4d94-92b1-fa2fc3169a33)
-
-   2. Now, we will open the mag file and see the different layers that are used in the building of the inverter.
-
-         Copy the tech file to this vsdstdcell design dir itself as we will be frequently using it.
-   
-         ![image](https://github.com/user-attachments/assets/e8ee555d-f797-4e77-a64b-49407a3b6204)
-
-         ![image](https://github.com/user-attachments/assets/df661033-92a6-4b21-b6e0-aa7c9e57624c)
-
-      	The read line that we are seeing in the above inverter layout is the polysilicon.
 
