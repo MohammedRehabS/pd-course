@@ -9,113 +9,113 @@
 <div class="toc">
 	<ul>
     		<li><a href="#header-1"> Day 1: Synthesis and flop ratio calculation </a></li>
-		<ul>
+	<ul>
         		<li><a href="#header-1-1"> Summary </a></li>
- 		</ul>
-		<ul>
+ 	</ul>
+	<ul>
 			<li><a href="#header-1-2"> Paths and setup </a></li>
-		</ul>
-		<ul>
+	</ul>
+	<ul>
 			<li><a href="#header-1-3"> Running Synthesis to figure out flop ratio </a></li>
-		</ul>
+	</ul>
 	</ul>
  </div>
  <div class="toc">
   	<ul>
     		<li><a href="#header-2"> Day 2: Floorplanning, placement and introduction to cell design and characterization </a></li>
-		<ul>
+	<ul>
         		<li><a href="#header-2-1"> Summary </a></li>
-		</ul>
-		<ul>
+	</ul>
+	<ul>
 			<li><a href="#header-2-2"> Theory </a></li>
-			<ul>
+	<ul>
 				<li><a href="#header-2-2-1"> Floor Planning </a></li>
-			</ul>
-			<ul>
+	</ul>
+	<ul>
 				<li><a href="#header-2-2-2"> Placement </a></li>
-			</ul>
-			<ul>
+	</ul>
+	<ul>
 				<li><a href="#header-2-2-3"> Cell Design and Characterization flows </a></li>
-			</ul>
-			<ul>
+	</ul>
+	<ul>
 				<li><a href="#header-2-2-4"> Timing Characterization </a></li>
-			</ul>
-		</ul>
-		<ul>
+	</ul>
+	</ul>
+	<ul>
 			<li><a href="#header-2-3"> Floorplanning lab </a></li>
-			<ul>
+	<ul>
 				<li><a href="#header-2-3-1"> Running Floorplanning </a></li>
-			</ul>
-			<ul>
+	</ul>
+	<ul>
 				<li><a href="#header-2-3-2"> Reviewing results </a></li>
-			</ul>
-		</ul>
-		<ul>
+	</ul>
+	</ul>
+	<ul>
 			<li><a href="#header-2-4"> Placement lab </a></li>
-			<ul>
+	<ul>
 				<li><a href="#header-2-4-1"> Running Placement </a></li>
-			</ul>
-			<ul>
+	</ul>
+	<ul>
 				<li><a href="#header-2-4-2"> Reviewing results </a></li>
-			</ul>
-		</ul>
+	</ul>
+	</ul>
 	</ul>
 </div>
 <div class="toc">
 	<ul>
     		<li><a href="#header-3"> Day 3: Jumpstarting, spice simulations and DRCs </a></li>
-		<ul>
+	<ul>
         		<li><a href="#header-3-1"> Jumpstarting </a></li>
- 		</ul>
-		<ul>
+ 	</ul>
+	<ul>
 			<li><a href="#header-3-2"> 16 Mask layers based CMOS fabrication process </a></li>
-		</ul>
-		<ul>
+	</ul>
+	<ul>
 			<li><a href="#header-3-3"> Spice simulation of CMOS inverter using NGSpice </a></li>
-			<u1>
+	<u1>
 				<li><a href="#header-3-3-1"> Lab steps to git clone vsdstdcelldesign </a></li>
-			</u1>
-			<u1>
+	</u1>
+	<u1>
 				<li><a href="#header-3-3-2"> Reviewing the layout </a></li>
-			</u1>
-			<u1>
+	</u1>
+	<u1>
 				<li><a href="#header-3-3-3"> Spice simulation </a></li>
-			</u1>
-		</ul>
-		<ul>
+	</u1>
+	</ul>
+	<ul>
 			<li><a href="#header-3-4"> DRC checks </a></li>
-		</ul>
+	</ul>
 	</ul>
  </div>
 <div class="toc">
 	<ul>
     		<li><a href="#header-4"> Day 4: Using custom cell in PD flow, STA and CTS </a></li>
-		<ul>
+	<ul>
         		<li><a href="#header-4-1"> Running with custom cell </a></li>
-			<u1>
+	<u1>
 				<li><a href="#header-4-1-1"> Dumping lef output </a></li>
-			</u1>
-			<u1>
+	</u1>
+	<u1>
 				<li><a href="#header-4-1-2"> Reducing slack </a></li>
-			</u1>
- 		</ul>
-		<ul>
+	</u1>
+ 	</ul>
+	<ul>
 			<li><a href="#header-4-2"> STA on a netlist provided in the standard cell design </a></li>
-		</ul>
-		<ul>
+	</ul>
+	<ul>
 			<li><a href="#header-4-3"> Running CTS </a></li>
-		</ul>
+	</ul>
 	</ul>
  </div>
 <div class="toc">
 	<ul>
     		<li><a href="#header-5"> Day 5: pdn and routing </a></li>
-		<ul>
+	<ul>
         		<li><a href="#header-5-1"> Generating PDN </a></li>
- 		</ul>
-		<ul>
+ 	</ul>
+	<ul>
 			<li><a href="#header-5-2"> Running routing </a></li>
-		</ul>
+	</ul>
 	</ul>
  </div>
 
