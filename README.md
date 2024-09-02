@@ -106,6 +106,17 @@
 		</ul>
 	</ul>
  </div>
+<div class="toc">
+	<ul>
+    		<li><a href="#header-5">Day 5: pdn and routing</a></li>
+		<ul>
+        		<li><a href="#header-5-1"> Generating PDN</a></li>
+ 		</ul>
+		<ul>
+			<li><a href="#header-5-2"> Running routing</a></li>
+		</ul>
+	</ul>
+ </div>
 
 
 # <h1 id="header-0">Overview</h1>
@@ -864,9 +875,9 @@ reporting clock skew for setup and hold
 
 ![image](https://github.com/user-attachments/assets/389bbd47-8ba6-44b6-8c53-056a9b44e39d)
 
-# DAY 5
+# <h1 id="header-5"> Day 5</h1>
 
-## Generating PDN:
+## <h1 id="header-5-1"> Generating PDN</h1>
 
 ![image](https://github.com/user-attachments/assets/e0458daf-e757-4091-bb2e-3b64ed498391)
 
@@ -874,7 +885,7 @@ generated PDN:
 
 ![image](https://github.com/user-attachments/assets/aeac0fd8-473c-49bf-aeec-2dd524a89216)
 
-## Running routing:
+## <h1 id="header-5-2"> Running routing</h1>
 
 run_routing command is used which uses TritonRoute to accomplish this:
 
