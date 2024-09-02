@@ -71,15 +71,15 @@
 		</ul>
 		<ul>
 			<li><a href="#header-3-3"> Spice simulation of CMOS inverter using NGSpice </a></li>
-				<u1>
+			<u1>
 				<li><a href="#header-3-3-1"> Lab steps to git clone vsdstdcelldesign </a></li>
-				</u1>
-				<u1>
+			</u1>
+			<u1>
 				<li><a href="#header-3-3-2"> Reviewing the layout </a></li>
-				</u1>
-				<u1>
+			</u1>
+			<u1>
 				<li><a href="#header-3-3-3"> Spice simulation </a></li>
-				</u1>
+			</u1>
 		</ul>
 		<ul>
 			<li><a href="#header-3-4"> DRC checks </a></li>
