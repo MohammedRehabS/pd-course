@@ -835,6 +835,7 @@ Bringing it down by replacing cell with higher drive strength in worst paths we 
 ![image](https://github.com/user-attachments/assets/abc6954a-807a-4dfd-8963-13ae46f13efe)
 
 Commands used:
+
 	replace_cell instance_name cell_to_be_replaced_with
  	report_checks -fields {net cap slew input_pins} -digits 4
   	report_tns
