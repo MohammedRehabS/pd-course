@@ -1,3 +1,4 @@
+
 # Contents
  
 <div class="toc">
@@ -892,4 +893,6 @@ run_routing command is used which uses TritonRoute to accomplish this:
 ![image](https://github.com/user-attachments/assets/1fa02690-0517-4722-a171-8192bfecb3be)
 
 Finished routing:
+
+![image](https://github.com/user-attachments/assets/e0ce5216-a16e-48a1-b255-57195adb33cc)
 
